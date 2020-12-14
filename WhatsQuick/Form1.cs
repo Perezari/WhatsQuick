@@ -20,7 +20,8 @@ namespace WhatsQuick
         private void WaBtn_Click(object sender, EventArgs e)
         {
             string Kidomet = comboBox1.Text.Substring(1);
-            Process.Start("https://wa.me/972" + Kidomet +  textBox1.Text + "?text=" + richTextBox1.Text);  
+            string MyProcess = "https://wa.me/972" + Kidomet + textBox1.Text + "?text=" + richTextBox1.Text;
+            Process.Start(MyProcess);  
         }
     }
 }
